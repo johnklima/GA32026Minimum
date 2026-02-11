@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{f2c4d7db-4839-46fa-a412-a62d30b402f2}">
+		<property name="assetPath">
+			<value>712564__newlocknew__ambdsgn_server-roomdata-centermachine-and-vent-noisewide.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>18.063729166666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{53c33909-4d52-4a59-816d-4e3e2377a6ce}</destination>
+		</relationship>
+	</object>
+</objects>

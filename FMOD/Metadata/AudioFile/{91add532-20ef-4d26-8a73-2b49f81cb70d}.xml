@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{91add532-20ef-4d26-8a73-2b49f81cb70d}">
+		<property name="assetPath">
+			<value>DSGN VORTEX IN.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.5039999999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{53c33909-4d52-4a59-816d-4e3e2377a6ce}</destination>
+		</relationship>
+	</object>
+</objects>

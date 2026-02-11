@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{fedcfbf0-e6ec-44c1-b1b6-3bb0e484bb73}">
+		<property name="assetPath">
+			<value>disgust.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>24.450612244897957</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{53c33909-4d52-4a59-816d-4e3e2377a6ce}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5c770ec3-1e46-4a72-9c79-5187acfd1e2a}">
+		<property name="assetPath">
+			<value>loathing.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>26.148571428571429</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{53c33909-4d52-4a59-816d-4e3e2377a6ce}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{7b1a1530-279d-47b2-a3cd-2c8e7c5aedb3}">
+		<property name="assetPath">
+			<value>GLASMisc_Reverse Glass Effect_04_MWSFX_GL.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.3283854166666669</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{53c33909-4d52-4a59-816d-4e3e2377a6ce}</destination>
+		</relationship>
+	</object>
+</objects>
