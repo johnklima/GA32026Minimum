@@ -32,6 +32,22 @@ public abstract class BasicCollide : MonoBehaviour
 
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+
+        if (other.tag == "Player")
+        {
+
+            Debug.Log("player exit " + name);
+
+            //call the concrete implementation
+            HandleTriggerExit(other.transform);
+            
+
+        }
+
+    }
 
     public abstract void HandleTriggerEnter(Transform otherTransform);
+    public abstract void HandleTriggerExit(Transform otherTransform);
 }

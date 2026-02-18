@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class TrigCollide : BasicCollide
 {
+
+    public GameObject ObjOfInterest;
+    
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +21,15 @@ public class TrigCollide : BasicCollide
     public override void HandleTriggerEnter(Transform otherTransform)
     {
 
-        Debug.Log("Handle " + transform.name + " " + otherTransform.name);
+        Debug.Log("Handle Enter " + transform.name + " " + otherTransform.name);
 
+        ObjOfInterest.SetActive(true);
+    }
+    public override void HandleTriggerExit(Transform otherTransform)
+    {
+
+        Debug.Log("Handle Exit " + transform.name + " " + otherTransform.name);
+
+        ObjOfInterest.SetActive(false);
     }
 }
