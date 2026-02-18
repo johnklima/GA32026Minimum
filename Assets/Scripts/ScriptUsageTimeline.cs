@@ -27,7 +27,7 @@ using UnityEngine;
 class ScriptUsageTimeline : MonoBehaviour
 {
 
-    [SerializeField] GameObject FMODAudioObject;
+    
     public int timelinePosition = 0;
 
     public void setTimelinePosition(int milliseconds)
@@ -49,8 +49,8 @@ class ScriptUsageTimeline : MonoBehaviour
 
     GCHandle timelineHandle;
 
+    [SerializeField] GameObject FMODAudioObject;
     public FMODUnity.EventReference EventName;
-
     
     FMOD.Studio.EVENT_CALLBACK markerCallback;
     FMOD.Studio.EventInstance eventInstance;
@@ -77,9 +77,11 @@ class ScriptUsageTimeline : MonoBehaviour
 
         eventInstance.setCallback(markerCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT | FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
 
-
+        //if you want it to just start at object active, start the listener
         startTimeline(0);
 
+        //if you want to start sound and listener in some trigger or whatnot,
+        //remove and call from that whatnot, which also activates the object's audio
 
     }
 

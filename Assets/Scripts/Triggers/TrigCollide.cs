@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BasicCollide : MonoBehaviour
+public class TrigCollide : BasicCollide
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,16 +11,13 @@ public class BasicCollide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        
     }
-
-    private void OnTriggerEnter(Collider other)
+   
+    public override void HandleTriggerEnter(Transform otherTransform)
     {
-        if(other.tag == "Player")
-        {
 
-            Debug.Log("player hit " + name);
+        Debug.Log("Handle Trig " + otherTransform.name);
 
-        }
     }
 }
