@@ -17,7 +17,7 @@ public class ReverbCollide : BasicCollide
     public override void HandleTriggerEnter(Transform otherTransform)
     {
 
-        Debug.Log("Handle Reverb" + otherTransform.name);
+        Debug.Log("Handle " + transform.name + " " + otherTransform.name);
 
     }
 }

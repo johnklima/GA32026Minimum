@@ -17,7 +17,7 @@ public class ENVcollide : BasicCollide
     public override void HandleTriggerEnter(Transform otherTransform)
     {
 
-        Debug.Log("Handle ENV" + otherTransform.name);
+        Debug.Log("Handle " + transform.name + " " + otherTransform.name);
 
     }
 }

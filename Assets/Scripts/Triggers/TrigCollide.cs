@@ -17,7 +17,7 @@ public class TrigCollide : BasicCollide
     public override void HandleTriggerEnter(Transform otherTransform)
     {
 
-        Debug.Log("Handle Trig " + otherTransform.name);
+        Debug.Log("Handle " + transform.name + " " + otherTransform.name);
 
     }
 }
