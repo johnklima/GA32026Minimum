@@ -12,6 +12,7 @@ public class EventEmitterManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //assuming we have only one emitter
         emit = transform.GetComponent<StudioEventEmitter>();
 
         // Get the live event instance after it has been created by the emitter (e.g., on Start or Awake)
