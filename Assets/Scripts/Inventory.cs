@@ -20,6 +20,17 @@ public class Inventory : MonoBehaviour
 
     public bool Add(GameObject obj)
     {
+        for(int i = 0;i <stuff.Length; i++)
+        {
+            if(obj == stuff[i])
+            {
+                //i'm already here
+                Debug.Log("i'm already here " + obj.name);
+                return false;
+            }
+
+        }
+
         if(nextSlot < stuff.Length)
         {
             stuff[nextSlot] = obj;
