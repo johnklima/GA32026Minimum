@@ -3326,6 +3326,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2067834126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8158692787495693442, guid: 91dd097ef7846004093f628ed20dcfdb, type: 3}
+  m_PrefabInstance: {fileID: 2138532003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2067834132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067834126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -615548683
+      Data2: 1079784225
+      Data3: -949790046
+      Data4: 755384588
+    Path: event:/footsteps
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2138532003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3382,6 +3418,10 @@ PrefabInstance:
       propertyPath: dstFromTarget
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4826087947877456083, guid: 91dd097ef7846004093f628ed20dcfdb, type: 3}
+      propertyPath: footsEmitter
+      value: 
+      objectReference: {fileID: 2067834132}
     - target: {fileID: 6578321730198702606, guid: 91dd097ef7846004093f628ed20dcfdb, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -3399,6 +3439,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8158692787495693442, guid: 91dd097ef7846004093f628ed20dcfdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2067834132}
     - targetCorrespondingSourceObject: {fileID: 3073721493395270374, guid: 91dd097ef7846004093f628ed20dcfdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1767795664}

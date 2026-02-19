@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
-
+using FMODUnity;
 public class PlayerAnimator : MonoBehaviour
 {
     Animator anim;
+    public StudioEventEmitter footsEmitter;
     
     private float volume = 1.0f;
 
@@ -68,8 +69,10 @@ public class PlayerAnimator : MonoBehaviour
     }
     public void TriggerSound()
     {
-        Debug.Log("trigger sound");
+        Debug.Log("trigger foot sound");
+        if(!footsEmitter.IsPlaying() )
+            footsEmitter.Play();
 
-        
+
     }
 }
