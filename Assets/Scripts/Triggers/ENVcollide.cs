@@ -20,7 +20,7 @@ public class ENVcollide : BasicCollide
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(emit.Params.Length);
+        Debug.Log("emmiter param count " + emit.Params.Length);
     }
    
     public override void HandleTriggerEnter(Transform otherTransform)
@@ -33,7 +33,7 @@ public class ENVcollide : BasicCollide
         manager.setParms(thisParm);
 
         //resetParm();
-        //emit.SetParameter(emit.Params[thisParm].Name, 0);
+        //emit.SetParameter(emit.Params[thisParm].Name, 1);
 
 
     }
