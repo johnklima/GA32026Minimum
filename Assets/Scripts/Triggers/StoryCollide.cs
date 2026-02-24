@@ -1,10 +1,12 @@
 using UnityEngine;
+using Unity.UI;
+using UnityEngine.UIElements;
 
 public class StoryCollide : BasicCollide
 {
 
     public GameObject ObjOfInterest;
-    
+    public GameObject Panel;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,13 +19,38 @@ public class StoryCollide : BasicCollide
     {
         
     }
-   
+
+    public void OnAnswer1()
+    {
+        Debug.Log("Answer 1 clickeed");
+
+        if (ObjOfInterest.transform.childCount > 0)
+        {
+            ObjOfInterest.transform.GetChild(0).gameObject.SetActive(true);
+            ObjOfInterest = ObjOfInterest.transform.GetChild(0).gameObject;
+        }
+            
+    }
+
+    public void OnAnswer2()
+    {
+
+        Debug.Log("Answer 2 clickeed");
+        if (ObjOfInterest.transform.childCount > 0)
+        {
+            ObjOfInterest.transform.GetChild(1).gameObject.SetActive(true);
+            ObjOfInterest = ObjOfInterest.transform.GetChild(1).gameObject;
+        }
+            
+    }
+
     public override void HandleTriggerEnter(Transform otherTransform)
     {
 
         Debug.Log("Handle Enter " + transform.name + " " + otherTransform.name);
 
         ObjOfInterest.SetActive(true);
+        Panel.SetActive(true);
     }
     public override void HandleTriggerExit(Transform otherTransform)
     {
@@ -31,5 +58,6 @@ public class StoryCollide : BasicCollide
         Debug.Log("Handle Exit " + transform.name + " " + otherTransform.name);
 
         ObjOfInterest.SetActive(false);
+        Panel.SetActive(false);
     }
 }
